@@ -1,0 +1,136 @@
+.footer {
+  background-color: #090d16;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4.5rem 0 2.5rem;
+  position: relative;
+}
+
+.container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 768px) {
+  .topRow {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoIcon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.6rem;
+  background: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandTitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 24rem;
+}
+
+.teluguMotto {
+  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #34d399;
+}
+
+.linksCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.colHeading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+
+.footerLink {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footerLink:hover {
+  color: #34d399;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+@media (min-width: 640px) {
+  .bottomRow {
+    flex-direction: row;
+  }
+}
+
+.madeWithHeart {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+:global([data-theme='light']) .footer {
+  background-color: #f8fafc;
+  border-top-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .topRow {
+  border-bottom-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .brandTitle,
+:global([data-theme='light']) .colHeading {
+  color: #0f172a;
+}
+
+:global([data-theme='light']) .tagline,
+:global([data-theme='light']) .footerLink,
+:global([data-theme='light']) .bottomRow {
+  color: #475569;
+}

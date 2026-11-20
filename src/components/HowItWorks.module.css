@@ -1,0 +1,255 @@
+.section {
+  padding: 5rem 0;
+  background-color: #0c111d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto 3.5rem;
+}
+
+.sectionBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.35rem;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stepCard {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  padding: 1.75rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.stepTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.stepIcon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.6rem;
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepNumber {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #475569;
+  font-family: monospace;
+}
+
+.stepTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.stepDetail {
+  font-size: 0.8rem;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.08);
+  border-left: 2px solid #10b981;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.25rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.stepDesc {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.55;
+}
+
+/* Personas */
+.personasWrapper {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+}
+
+.personasHeader {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 2.25rem;
+}
+
+.personasTitle {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.personasList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .personasList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .personasList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.personaCard {
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.personaRole {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #34d399;
+  margin-bottom: 0.25rem;
+}
+
+.personaHeading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.personaQuote {
+  font-size: 0.825rem;
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.4rem;
+  border-left: 3px solid #10b981;
+  margin-bottom: 0.75rem;
+  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+.personaBenefit {
+  font-size: 0.825rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+:global([data-theme='light']) .section {
+  background-color: #f1f5f9;
+  border-bottom-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .title,
+:global([data-theme='light']) .stepTitle,
+:global([data-theme='light']) .personasTitle,
+:global([data-theme='light']) .personaHeading {
+  color: #0f172a;
+}
+
+:global([data-theme='light']) .subtitle,
+:global([data-theme='light']) .stepDesc,
+:global([data-theme='light']) .personaBenefit {
+  color: #475569;
+}
+
+:global([data-theme='light']) .stepCard,
+:global([data-theme='light']) .personasWrapper {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .stepNumber {
+  color: #94a3b8;
+}
+
+:global([data-theme='light']) .personaCard {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .personaQuote {
+  background: #f1f5f9;
+  color: #334155;
+}

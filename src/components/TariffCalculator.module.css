@@ -1,0 +1,329 @@
+.section {
+  padding: 4.5rem 0;
+  background-color: #0c111d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto 3rem;
+}
+
+.sectionBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.35rem;
+  }
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.calcCard {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 640px) {
+  .calcCard {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calcCard {
+    padding: 2.5rem;
+  }
+}
+
+.calcGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .calcGrid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.controlsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discomSelector {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .discomSelector {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.discomBtn {
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.discomBtn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.discomActive {
+  background: rgba(16, 185, 129, 0.12) !important;
+  border-color: #10b981 !important;
+  color: #34d399 !important;
+}
+
+.unitsInputRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.unitsSlider {
+  flex-grow: 1;
+  min-width: 0;
+  accent-color: #10b981;
+  cursor: pointer;
+  height: 6px;
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+.unitsNumberInput {
+  width: 5.5rem;
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.unitsNumberInput:focus {
+  outline: none;
+  border-color: #10b981;
+}
+
+/* Category Alert */
+.categoryPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.4rem;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.warningBox {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  color: #fde68a;
+  font-size: 0.825rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Results Column */
+.resultsColumn {
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .resultsColumn {
+    padding: 1.5rem;
+  }
+}
+
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.resultsTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.billTotalAmount {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #34d399;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.25rem;
+}
+
+.slabList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 1rem 0;
+  font-size: 0.825rem;
+}
+
+.slabRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #94a3b8;
+  padding: 0.2rem 0;
+}
+
+.slabRowHighlight {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.divider {
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  margin: 0.4rem 0;
+}
+
+.teluguSummaryBox {
+  margin-top: auto;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  line-height: 1.55;
+  font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+}
+
+:global([data-theme='light']) .section {
+  background-color: #f1f5f9;
+  border-bottom-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .title,
+:global([data-theme='light']) .resultsTitle {
+  color: #0f172a;
+}
+
+:global([data-theme='light']) .subtitle,
+:global([data-theme='light']) .label,
+:global([data-theme='light']) .slabRow {
+  color: #475569;
+}
+
+:global([data-theme='light']) .calcCard {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+:global([data-theme='light']) .discomBtn,
+:global([data-theme='light']) .unitsNumberInput,
+:global([data-theme='light']) .resultsColumn {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+:global([data-theme='light']) .discomBtn {
+  color: #475569;
+}
+
+:global([data-theme='light']) .discomBtn:hover {
+  color: #0f172a;
+}
+
+:global([data-theme='light']) .unitsNumberInput,
+:global([data-theme='light']) .slabRowHighlight {
+  color: #0f172a;
+}
+
+:global([data-theme='light']) .resultsHeader {
+  border-bottom-color: #e2e8f0;
+}
+
+:global([data-theme='light']) .teluguSummaryBox {
+  color: #334155;
+}
